@@ -57,3 +57,52 @@ These results indicate that the model is highly effective at detecting fraudulen
 
 ---
 
+
+---
+
+## 🚀 How to Run the Project
+
+### Running in Google Colab
+
+1. Open [Google Colab](https://colab.research.google.com)
+2. Mount Google Drive (optional if you're loading data from Drive):
+   ```python
+   from google.colab import drive
+   drive.mount('/content/drive')
+   ```
+3. Upload your `Fraud.csv` dataset to Google Drive.
+4. Open or paste the contents of `Fraud.py` into a new Colab notebook.
+5. Update the file path in the script if needed:
+   ```python
+   df = pd.read_csv("/content/drive/MyDrive/Fraud.csv")
+   ```
+6. Run the notebook. The model will be trained and evaluated directly within Colab.
+
+---
+
+###  Running on Local Machine
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/fraud-detection.git
+   cd fraud-detection
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Make sure `Fraud.csv` is placed in the project root directory.
+
+4. Run the training script:
+   ```bash
+   python Fraud.py
+   ```
+
+5. Output:
+   - Model training results, including confusion matrix, classification report, and ROC AUC score, will be printed in the terminal.
+
+---
+
+
